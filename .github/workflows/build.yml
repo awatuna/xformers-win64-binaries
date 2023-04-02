@@ -37,7 +37,7 @@ jobs:
         run: |
           git clone https://github.com/facebookresearch/xformers.git
           cd xformers
-          git checkout tags/v0.0.17
+          git checkout tags/v0.0.18
           git submodule update --init --recursive
           pip install ${{ matrix.torch-install-command }}
           pip install -r requirements.txt
